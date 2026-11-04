@@ -24,11 +24,7 @@ jobs:
       - name: Build Windows app
         shell: pwsh
         run: >-
-          pyinstaller --noconfirm --clean --windowed --onedir
-          --name "SC3K Facade Generator v10"
-          --add-data "библиотека;библиотека"
-          --add-data "palette.png;."
-          facade_builder.py
+          pyinstaller --noconfirm --clean --windowed --onedir --name "Modulith" --add-data "library;library" --add-data "app_icon.png;." facade_builder.py
 
       - name: Package app folder
         shell: pwsh
