@@ -28,12 +28,12 @@ jobs:
 
       - name: Package app folder
         shell: pwsh
-        run: Compress-Archive -Path "dist/SC3K Facade Generator v10" -DestinationPath "SC3K_Facade_Generator_v10_Windows.zip" -Force
+        run: Compress-Archive -Path "dist/Modulith" -DestinationPath "Modulith_Windows.zip" -Force
 
       - name: Upload Windows ZIP
         uses: actions/upload-artifact@v4
         with:
-          name: SC3K-Facade-Generator-v10-Windows
-          path: SC3K_Facade_Generator_v10_Windows.zip
-          if-no-files-found: error
-          retention-days: 14
+          name: Modulith-Windows
+          path: Modulith_Windows.zip
+        
+          
